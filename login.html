@@ -1,0 +1,15 @@
+
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Log In Form</h2>
+    <br action="/login/save" method="get">
+        {% csrf_token %}
+
+        Email    <input type="email" name="email"></br></br>
+        Password <input type="password" name="password"></br></br>
+
+        <button type="submit">Log in</button></br></br>
+<ul class="nav navbar-nav"><a href="/start/2" >Sign Up</a></ul>
+
+    </form>
+{% endblock %}
